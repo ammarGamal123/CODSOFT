@@ -1,0 +1,116 @@
+.calculator{
+    width: 300px;
+    height: 400px;
+    background-color: #90e0ef;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 25px;
+    padding: 20px;
+    font-family: "Work Sans" , "sans-serif";
+
+}
+.calculator .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.container #screen-output{
+    width: 100%;
+    height: 15%;
+    background-color: #caf0f8;
+    border-radius: 15px;
+    box-shadow: -2px 2px 20px 5px #0000001f;
+    border: none;
+    font-size: 30px;
+    outline: none;
+
+}
+.container .controls{
+    height: 75%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    
+    "one six plus"
+    "two seven minus"
+    "three eight div"
+    "four nine mul"
+    "five ten equel"
+    ;
+}
+.container .controls  button{
+    background-color: #0077b6;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    transition: background-color  0.5s ,color  0.5s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: -2px 2px 20px -4px #0077b6;
+    
+}
+.container .controls  button:hover{
+   background-color: #caf0f8;
+   color: #0077b6;
+}
+.container .controls  button:active{
+    background-color: #caf0f8;
+    color: #0077b6;
+    transform: scale(0.8);
+ }
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.zero{
+    grid-area: zero;
+}
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+
+.mul{
+    grid-area: mul;
+}
+.div{
+    grid-area: div;
+}
