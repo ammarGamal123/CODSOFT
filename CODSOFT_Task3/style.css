@@ -37,14 +37,14 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(5,1fr);
     gap: 10px;
-    grid-template-areas: 
+    /* grid-template-areas: 
     
     "one six plus"
     "two seven minus"
     "three eight div"
     "four nine mul"
     "five ten equel"
-    ;
+    ; */
 }
 .container .controls  button{
     background-color: #0077b6;
@@ -110,6 +110,9 @@
 
 .mul{
     grid-area: mul;
+}
+.dot {
+    grid-area:dot;
 }
 .div{
     grid-area: div;
